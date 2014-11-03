@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>Adminser</servlet-name>
+        <servlet-class>Adminser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>helper</servlet-name>
+        <servlet-class>pack.helper</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Adminser</servlet-name>
+        <url-pattern>/Adminser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>helper</servlet-name>
+        <url-pattern>/helper</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        </welcome-file-list>
+    </web-app>
